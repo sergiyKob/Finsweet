@@ -1,0 +1,76 @@
+
+//-------------------------------------//
+$background-color: #ffffff;
+$font-size: 16px;
+$line-height: 1.75;
+
+$black: #1E1B1B;
+$primary: #FF6433;
+$secondary: #661CE7;
+$mint: #00D289;
+$steelgrey: #E2E6E9;
+$lightgrey: #F2F2F2;
+$white: #ffffff;
+
+$transition: all 0.3s;
+$title: 36px;
+
+//----------адаптив--------------------//
+$xs: 360px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+//--------------------------------------//
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+%hover {
+  &:hover {
+  }
+  &:focus {
+  }
+  &:active {
+  }
+}
+
+%center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%absolut {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+%manrope-500 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+}
+
+%manrope-600 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+}
+
+%manrope-700 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+}
+
+%manrope-800 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
