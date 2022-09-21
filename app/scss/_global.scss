@@ -42,3 +42,15 @@ body {
   overflow: hidden;
 }
 
+.btn {
+  font-size: 18px;
+  color: $white;
+  border-radius: 12px;
+  padding: 16px 40px;
+  @include sm(576) {
+  padding: 8px 20px;
+  font-size: 14px;
+  }
+
+
+}
