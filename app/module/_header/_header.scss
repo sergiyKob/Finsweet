@@ -1,5 +1,16 @@
 .header {
   padding-bottom: 128px;
+  @include lg(992) {
+    padding-bottom: 90px;
+  }
+      @include md(768){
+      padding-bottom: 50px;
+  }
+  @include sm(576){
+      padding-bottom: 45px;
+
+    }
+  
 
   &__inner {
     display: flex;
@@ -13,16 +24,18 @@
     @include lg(992) {
       flex-direction: column;
     }
+    @include sm(576){
+      padding-top: 15px;
+
+    }
   }
+
   &__content {
     max-width: 50%;
     display: flex;
     flex-direction: column;
-    @include xl(1200) {
-      // max-width: 45%;
-    }
     @include lg(992) {
-      max-width: 65%;
+      max-width: 68%;
       margin-bottom: 35px;
     }
     @include md(768) {
@@ -31,6 +44,7 @@
     @include sm(576) {
       max-width: 100%;
       text-align: center;
+      margin-bottom: 25px;
     }
   }
 
@@ -46,7 +60,7 @@
     @include md(768) {
       max-width: 90%;
     }
-    @include sm(576){
+    @include sm(576) {
       max-width: 100%;
     }
   }
@@ -80,9 +94,9 @@
       left: -30px;
       padding: 7px 30px 7px 10px;
     }
-  @include sm(576){
-    display: none;
-  }
+    @include sm(576) {
+      display: none;
+    }
   }
 
   &__bg-service-icon {
@@ -109,7 +123,7 @@
       right: 0;
       padding: 12px 28px;
     }
-    @include sm(576){
+    @include sm(576) {
       display: none;
     }
   }
@@ -156,15 +170,12 @@
       font-size: 40px;
       margin-bottom: 15px;
     }
-    @include sm(576){
+    @include sm(576) {
       font-size: 36px;
-
     }
   }
 
   &__link {
-    background-color: $primary;
-    display: inline-block;
     margin-bottom: 48px;
     transition: $transition;
     &:hover {
@@ -179,7 +190,7 @@
   &__hours {
     display: flex;
     align-items: center;
-    @include sm(576){
+    @include sm(576) {
       justify-content: center;
     }
   }
@@ -189,18 +200,16 @@
     height: 31px;
     fill: $steelgrey;
     margin-right: 13px;
-    @include sm(576){
+    @include sm(576) {
       display: none;
     }
   }
 
   &__hours-body {
-    
     & p {
       font-size: 18px;
-      @include sm(576){
-      font-size: 16px;
-
+      @include sm(576) {
+        font-size: 16px;
       }
     }
   }

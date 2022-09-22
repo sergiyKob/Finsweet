@@ -55,6 +55,14 @@ $xl: 1200px;
 }
 
 
+%btn-hover {
+  &:hover {
+      background-color: #f54209;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+
 %manrope-500 {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
