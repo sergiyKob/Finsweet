@@ -3,6 +3,9 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    @include xl(1200){
+      justify-content: space-around;
+    }
     @include lg(992) {
       flex-direction: column;
     }
@@ -38,7 +41,7 @@
       padding: 0 15px;
     }
     @include sm(576) {
-      padding: 0 5px;
+      padding: 0;
     }
   }
 
@@ -127,5 +130,8 @@
 
   &__form {
     padding: 0 15px;
+          @include sm(576) {
+     padding: 0;
+  }
   }
 }
