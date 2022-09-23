@@ -88,15 +88,13 @@
   }
 
   &__content-link {
+    @extend %hover-link;
     font-size: 18px;
     display: flex;
     align-items: center;
     margin-left: 63px;
     transition: all 1.5s;
     max-width: 280px;
-    &:hover {
-      text-decoration: underline;
-    }
     @include sm(576) {
       font-size: 14px;
     }

@@ -54,6 +54,11 @@ $xl: 1200px;
   background-size: cover;
 }
 
+%hover-link {
+  &:hover {
+      text-decoration: underline;
+    }
+}
 
 
 

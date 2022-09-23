@@ -130,7 +130,7 @@ body {
 .title-xl {
   @extend %manrope-800;
   font-size: 58px;
-  line-height: 1.4;
+  line-height: 1.3;
   letter-spacing: -0.03em;
   @include xl(1200) {
     font-size: 45px;
@@ -156,5 +156,166 @@ body {
   }
   @include sm(576) {
     font-size: 22px;
+  }
+}
+
+.item-card {
+  @extend %center;
+  background-color: $white;
+  width: 24%;
+  height: 232px;
+  transition: $transition;
+  &:hover {
+    background-color: $primary;
+    cursor: pointer;
+    .item-card__icon {
+      fill: $white;
+    }
+    .item-card__text {
+      color: $white;
+    }
+  }
+  @include xl(1200) {
+    width: 30%;
+    height: 200px;
+  }
+  @include md(768) {
+    width: 45%;
+    height: 170px;
+  }
+  @include sm(576) {
+    width: 85%;
+    height: 170px;
+  }
+
+  &__icon {
+    fill: $black;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+
+  &__icon_car {
+    width: 44px;
+    height: 32px;
+  }
+  &__icon_engine {
+    width: 42px;
+    height: 42px;
+  }
+
+  &__icon_wheel,
+  &__icon_service {
+    width: 46px;
+    height: 46px;
+  }
+
+  &__icon_oil {
+    width: 33px;
+    height: 46px;
+  }
+
+  &__icon_car2 {
+    width: 54px;
+    height: 38px;
+  }
+
+  &__icon_batteries {
+    width: 44px;
+    height: 39px;
+  }
+
+  &__icon_shield {
+    width: 37px;
+    height: 46px;
+  }
+
+  &__item-text {
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+  }
+}
+
+.item-steps {
+  position: relative;
+  padding: 12px 0 0 96px;
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: 16px;
+    &::before {
+      content: "";
+      position: absolute;
+      border-left: 3px dashed $primary;
+      top: 80px;
+      left: 35px;
+      height: 55%;
+      @include sm(576) {
+        left: 25px;
+      }
+    }
+  }
+  @include lg(992) {
+    padding: 12px 0 0 85px;
+  }
+  @include sm(576) {
+    padding: 0 0 0 60px;
+  }
+
+  &__icon {
+    @extend %manrope-700;
+    @extend %center;
+    background-color: $secondary;
+    color: $white;
+    font-size: 32px;
+    line-height: 0.75;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.24);
+      top: 52px;
+      left: 15px;
+    }
+    @include sm(576) {
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+    }
+  }
+
+  &__title {
+    @extend %manrope-700;
+    font-size: 32px;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+    @include lg(992) {
+      font-size: 28px;
+    }
+    @include sm(576) {
+      font-size: 22px;
+    }
+  }
+
+  &__text {
+    max-width: 336px;
+    font-size: 18px;
+    opacity: 0.6;
+    @include lg(992) {
+      line-height: 1.5;
+      max-width: 100%;
+    }
+    @include sm(576) {
+      font-size: 16px;
+    }
   }
 }
