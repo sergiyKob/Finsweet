@@ -330,44 +330,42 @@ body {
   }
 }
 
-.info {
-  &__top {
-    display: flex;
-    height: 502px;
-    max-width: 100%;
-    @include xl(1200) {
-      height: 400px;
-    }
-    @include lg(992) {
-      height: 350px;
-    }
-    @include md(768) {
-      height: 280px;
-    }
-    @include sm(576) {
-      height: 220px;
-    }
+.contact-baner {
+  display: flex;
+  height: 502px;
+  max-width: 100%;
+  @include xl(1200) {
+    height: 400px;
+  }
+  @include lg(992) {
+    height: 350px;
+  }
+  @include md(768) {
+    height: 280px;
+  }
+  @include sm(576) {
+    height: 220px;
   }
 
-  &__top-left,
-  &__top-right {
+  &__left,
+  &__right {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
   }
 
-  &__top-left {
+  &__left {
     width: 55%;
   }
 
-  &__top-right {
+  &__right {
     width: 45%;
     @include sm(576) {
       width: 0;
     }
   }
 
-  &__top-inner {
+  &__body {
     background-color: $primary;
     width: 62%;
     height: 100%;
@@ -381,10 +379,9 @@ body {
     @include sm(576) {
       width: 181%;
     }
-    
   }
 
-  &__top-txt {
+  &__text {
     width: 91%;
     margin: 0 auto;
   }
@@ -407,11 +404,10 @@ body {
   &__link {
     max-width: 200px;
   }
+}
 
-  &__bottom {
-    background-color: $lightgrey;
-  }
-
+.info {
+  background-color: $lightgrey;
   &__list {
     display: flex;
     justify-content: space-between;
@@ -421,7 +417,7 @@ body {
       padding: 30px 0;
     }
   }
-
+  
   &__item {
     font-size: 24px;
     line-height: 1.5;
@@ -444,7 +440,7 @@ body {
       font-size: 16px;
     }
   }
-
+  
   &__number {
     display: block;
     color: $secondary;
@@ -453,3 +449,4 @@ body {
     }
   }
 }
+
