@@ -1,0 +1,17 @@
+
+.questions {
+  background-color: $steelgrey;
+  &__title {
+    margin-bottom: 94px;
+    text-align: center;
+     
+    @include lg(992) {
+     margin-bottom: 32px;
+    }
+    
+  }
+
+  &__accordion {}
+}
+
+

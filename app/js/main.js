@@ -34,4 +34,20 @@ $(function () {
     ]
   });
 
+
+//============================= accordion ======================================//
+//======клас 'one', відкритий буде тільки один спойлер =========================//
+
+  $('.accordion__item-top').click(function () {
+
+    if ($('.accordion__item-top').hasClass('one')) {
+      $('.accordion__item-top').not($(this)).removeClass('active');
+      $('.accordion__item-content').not($(this).next()).slideUp(300);
+    }
+    $(this).toggleClass('active').next().slideToggle(300);
+
+  });
+
+//================================================================================//
+
 });
