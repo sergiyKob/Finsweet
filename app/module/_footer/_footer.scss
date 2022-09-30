@@ -1,0 +1,191 @@
+.footer {
+  @extend %manrope-500;
+  color: $white;
+
+  &__top {
+    background-color: $black;
+    opacity: 0.98;
+  }
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 170px;
+
+    @include xl(1200) {
+      padding-right: 0;
+      justify-content: space-around;
+    }
+    @include lg(992) {
+      flex-direction: column;
+    }
+  }
+
+  &__top-left {
+    max-width: 42%;
+
+    @include lg(992) {
+      margin-bottom: 40px;
+      max-width: 100%;
+    }
+    @include md(768) {
+      margin-bottom: 25px;
+    }
+    @include sm(576) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__top-title {
+    margin-bottom: 64px;
+
+    @include lg(992) {
+      margin-bottom: 30px;
+    }
+    @include md(768) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    @include lg(992) {
+    }
+  }
+
+  &__contacts-item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+
+      @include md(768) {
+        margin-bottom: 15px;
+      }
+      @include sm(576) {
+      }
+    }
+  }
+
+  &__contacts-title {
+    display: block;
+    font-size: 18px;
+    opacity: 0.6;
+    margin-bottom: 8px;
+
+    @include lg(992) {
+      margin-bottom: 0;
+    }
+
+    @include sm(576) {
+      font-size: 14px;
+    }
+  }
+
+  &__contacts-phone,
+  &__contacts-address,
+  &__contacts-hours {
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+    transition: $transition;
+
+    @include lg(992) {
+      display: block;
+    }
+
+    @include md(768) {
+      font-size: 20px;
+      padding: 9px 0;
+    }
+    @include sm(576) {
+      font-size: 16px;
+    }
+  }
+
+  &__contacts-phone,
+  &__contacts-address {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__bottom {
+    background-color: $black;
+    padding: 65px 0;
+
+    @include lg(992) {
+      padding: 30px 0;
+    }
+  }
+
+  &__logo {
+    @include lg(992) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.social {
+  &__item {
+    &:not(:last-child) {
+      margin-right: 24px;
+
+      @include sm(576) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: $white;
+    transition: $transition;
+    &:hover {
+      opacity: 0.6;
+    }
+
+    @include lg(992) {
+      width: 44px;
+      height: 44px;
+      padding: 10px;
+    }
+  }
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+
+  @include lg(992) {
+    flex-direction: column;
+  }
+
+  &__list {
+    display: flex;
+    border-right: none;
+    margin: 0;
+
+    @include lg(992) {
+      flex-direction: column;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+
+      @include lg(992) {
+        margin-right: 0;
+        padding: 8px 0;
+      }
+    }
+  }
+
+  &__link {
+    color: inherit;
+    transition: $transition;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

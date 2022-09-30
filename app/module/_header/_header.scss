@@ -275,6 +275,7 @@
     }
   }
   &__link {
+    color: $black;
     transition: $transition;
     &:hover {
       text-decoration: underline;
