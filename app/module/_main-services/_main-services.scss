@@ -49,7 +49,15 @@
   }
 
   &__title {
+    font-size: 64px;
     margin-bottom: 16px;
+
+      @include xl(1200) {
+      font-size: 50px;
+    }
+    @include md(768) {
+      font-size: 40px;
+    }
   }
 
   &__tetx {

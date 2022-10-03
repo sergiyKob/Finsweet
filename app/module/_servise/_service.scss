@@ -100,16 +100,6 @@
     }
   }
 
-  &__link-icon {
-    width: 52px;
-    height: 18px;
-    margin-left: 21px;
-    @include sm(576) {
-      width: 35px;
-      margin-left: 10px;
-    }
-  }
-
   &__calculation {
     max-width: 49%;
     padding-top: 10px;

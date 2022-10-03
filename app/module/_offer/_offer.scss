@@ -44,6 +44,35 @@
     }
   }
 
+  &__item {
+    width: 24%;
+
+    @include xl(1200) {
+      width: 30%;
+    }
+    @include lg(992) {
+    }
+    @include md(768) {
+      width: 45%;
+    }
+    @include sm(576) {
+      width: 45%;
+    }
+  }
+
+  &__item-card {
+
+    @include xl(1200) {
+    height: 200px;
+  }
+  @include md(768) {
+   height: 170px;
+  }
+  @include sm(576) {
+   height: 150px;
+  }
+  }
+
   &__link {
     @extend %hover-link;
     display: flex;
