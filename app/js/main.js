@@ -48,6 +48,26 @@ $(function () {
 
   });
 
-//================================================================================//
+//=========================== fixed header ==================================//
+
+  $(window).scroll(function () {
+    var menu = $('.menu');
+    if ($(this).scrollTop() > 1) {
+      menu.addClass('menu-fixed');
+    } else {
+      menu.removeClass('menu-fixed');
+    }
+  });
+
+  //======================== Плавний скрол ===============================//
+
+  $(".footer__logo,.logo").on("click", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1000);
+  });
+
+  //======================================================================//
 
 });

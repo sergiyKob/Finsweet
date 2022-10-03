@@ -6,6 +6,7 @@
     background-color: $black;
     opacity: 0.98;
   }
+
   &__top-inner {
     display: flex;
     justify-content: space-between;
@@ -117,8 +118,14 @@
   }
 
   &__logo {
+    transition: $transition;
+    
     @include lg(992) {
       margin-bottom: 20px;
+    }
+
+    &:hover {
+    opacity: 0.8;
     }
   }
 }
