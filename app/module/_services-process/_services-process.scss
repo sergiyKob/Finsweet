@@ -1,0 +1,106 @@
+.services-process {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+    @include lg(992) {
+      display: block;
+    }
+  }
+
+  &__content {
+    max-width: 40%;
+
+    @include lg(992) {
+      max-width: 100%;
+      margin-bottom: 60px;
+    }
+    @include sm(576) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 48px;
+
+    @include md(768) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 72px;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+
+      @include md(768) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &::before {
+      @extend %absolute;
+      background-image: url("../images/icons/checkmark.svg");
+      width: 48px;
+      height: 48px;
+      top: 0;
+      left: 0;
+
+      @include md(768) {
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+    @include xl(1200) {
+      padding-left: 60px;
+    }
+    @include md(768) {
+      padding-left: 50px;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+
+    @include xl(1200) {
+      font-size: 22px;
+    }
+    @include md(768) {
+      font-size: 18px;
+    }
+    @include sm(576) {
+      font-size: 16px;
+    }
+  }
+
+  &__box-img {
+    display: flex;
+
+    @include xl(1200) {
+      max-width: 55%;
+    }
+    @include lg(992) {
+      max-width: 100%;
+      justify-content: space-around;
+    }
+  }
+
+  &__img {
+    &:not(:last-child) {
+      margin-right: 16px;
+
+      @include lg(992) {
+        margin-right: 0;
+      }
+    }
+
+    @include xl(1200) {
+      max-width: 48%;
+    }
+  }
+}
