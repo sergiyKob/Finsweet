@@ -68,6 +68,19 @@ $(function () {
     $('body,html').animate({ scrollTop: top }, 1000);
   });
 
-  //======================================================================//
+  //============================== services tabs ========================================//
+
+  $('.tabs__link').on('click', function (e) {
+    e.preventDefault();
+    $('.tabs__link').removeClass('tabs__link_active');
+    $(this).addClass('tabs__link_active');
+
+
+    $('.tabs__content-item').removeClass('tabs__content-item_active');
+    $($(this).attr('href')).addClass('tabs__content-item_active');
+
+  });
+
+//==============================================================================//
 
 });
