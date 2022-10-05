@@ -1,0 +1,238 @@
+.main-diagnostics {
+  padding-top: 170px;
+
+  @include xl(1200) {
+    padding-top: 100px;
+  }
+  @include sm(576) {
+    padding-top: 74px;
+  }
+
+  &__title {
+    font-size: 64px;
+    margin-bottom: 96px;
+
+    @include xl(1200) {
+      font-size: 45px;
+      margin-bottom: 45px;
+    }
+    @include md(768) {
+      font-size: 33px;
+      margin-bottom: 30px;
+    }
+    @include sm(576) {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+    @include lg(992) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__aside {
+    width: 26%;
+    @include lg(992) {
+      width: 100%;
+    }
+  }
+
+  &__aside-title {
+    @extend %manrope-700;
+    font-size: 32px;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+    background-color: #f5f5f5;
+    padding: 32px 32px 0 32px;
+
+    @include xl(1200) {
+      font-size: 26px;
+      padding: 20px 32px 0 32px;
+    }
+    @include md(768) {
+      padding: 15px 15px 0 15px;
+    }
+    @include sm(576) {
+      font-size: 24px;
+    }
+  }
+
+  &__services-list {
+    background-color: #f5f5f5;
+    padding: 32px;
+    margin-bottom: 48px;
+
+    @include lg(992) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    @include md(768) {
+      padding: 15px;
+    }
+    @include sm(576) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__services-item {
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 26px;
+    }
+
+    @include lg(992) {
+      width: 32%;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+      @include sm(576) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__item-card {
+    height: 160px;
+
+    @include sm(576) {
+      height: 90px;
+    }
+  }
+
+  &__benefits-item {
+    position: relative;
+    padding: 0 0 0 64px;
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    @include xl(1200) {
+      padding: 0 0 0 55px;
+    }
+    @include lg(992) {
+    }
+    @include md(768) {
+    }
+    @include sm(576) {
+    }
+  }
+
+  &__benefits-icon {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 47px;
+    height: 47px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  &__benefits-title {
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+
+    @include xl(1200) {
+      font-size: 22px;
+    }
+  }
+
+  &__benefits-text {
+    opacity: 0.6;
+  }
+
+  &__body {
+    max-width: 67%;
+
+    @include lg(992) {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__content {
+    &:not(:last-child) {
+      margin-bottom: 68px;
+
+      @include lg(992) {
+        margin-bottom: 40px;
+      }
+      @include sm(576) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  &__img {
+    margin-bottom: 55px;
+
+    @include lg(992) {
+      margin: 0 auto 35px;
+    }
+    @include md(768) {
+      margin: 0 auto 20px;
+    }
+  }
+
+  &__content-title {
+    font-size: 40px;
+    margin-bottom: 24px;
+
+    @include lg(992) {
+      font-size: 36px;
+    }
+
+    @include md(768) {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+    @include sm(576) {
+      font-size: 24px;
+    }
+  }
+
+  &__box-text {
+    & p {
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  &__content-title2 {
+    @extend %manrope-700;
+    font-size: 32px;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+
+    @include md(768) {
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+    @include sm(576) {
+      font-size: 24px;
+    }
+  }
+
+  &__blockquote {
+    border-left: 3px solid $black;
+    padding-left: 32px;
+
+    & p {
+      font-size: 18px;
+      opacity: 0.6;
+    }
+  }
+}

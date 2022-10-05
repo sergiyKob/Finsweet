@@ -5,7 +5,7 @@
     justify-content: space-between;
 
     @include md(768) {
-      display: block;
+      flex-direction: column-reverse;
     }
     @include sm(576) {
     }
@@ -108,6 +108,7 @@
     @include md(768) {
       gap: 10px;
       max-width: 100%;
+      margin-bottom: 10px;
     }
     @include sm(576) {
       gap: 5px;
@@ -147,10 +148,10 @@
     }
 
     @include md(768) {
-      height: 170px;
+      height: 120px;
     }
     @include sm(576) {
-      height: 150px;
+      height: 75px;
     }
   }
 }
