@@ -1,0 +1,48 @@
+.process-about {
+  padding-top: 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+    @include lg(992) {
+      display: block;
+    }
+  }
+  
+  &__content {
+    max-width: 50%;
+
+    @include lg(992) {
+      max-width: 95%;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 1.5;
+    opacity: 0.6;
+    letter-spacing: -0.03em;
+    margin-bottom: 48px;
+
+    @include md(768) {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    @include sm(576) {
+      font-size: 18px;
+    }
+  }
+
+  &__img {
+    @include xl(1200) {
+      margin: 0 auto;
+    }
+  }
+}
+

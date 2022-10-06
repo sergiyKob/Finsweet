@@ -1,0 +1,29 @@
+.main-about {
+  padding-top: 170px;
+
+  @include xl(1200) {
+    padding-top: 100px;
+  }
+  @include sm(576) {
+    padding-top: 74px;
+  }
+  &__title {
+    font-size: 64px;
+
+    @include xl(1200) {
+      font-size: 45px;
+    }
+    @include md(768) {
+      font-size: 33px;
+    }
+    @include sm(576) {
+      font-size: 28px;
+    }
+  }
+
+  &__text {
+      @include sm(576) {
+      font-size: 16px;
+    }
+  }
+}
