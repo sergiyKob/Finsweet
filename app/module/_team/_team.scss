@@ -1,0 +1,73 @@
+.team {
+  &__title {
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 66px;
+
+    @include xl(1200) {
+      font-size: 45px;
+      margin-bottom: 50px;
+    }
+    @include md(768) {
+      font-size: 33px;
+      margin-bottom: 30px;
+    }
+    @include sm(576) {
+      font-size: 28px;
+      margin-bottom: 18px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-gap: 32px;
+
+    @include xl(1200) {
+      grid-gap: 20px;
+    }
+    @include md(768) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include sm(576) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 8px;
+    }
+  }
+
+  &__card {
+    max-width: 405px;
+  }
+
+  &__content {
+    color: $white;
+    background-color: $black;
+    text-align: center;
+    padding: 24px 10px;
+
+    @include xl(1200) {
+      padding: 10px 5px;
+    }
+    @include md(768) {
+      padding: 5px 5px;
+    }
+    @include sm(576) {
+      padding: 3px 3px;
+    }
+  }
+
+  &__name {
+    font-size: 24px;
+    letter-spacing: -0.03em;
+
+    @include md(768) {
+      font-size: 20px;
+    }
+  }
+
+  &__position {
+    font-size: 16px;
+    opacity: 0.7;
+  }
+}
