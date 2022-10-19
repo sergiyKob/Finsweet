@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finsweet</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body id="body">
+  <header class="header">
+    <div class="container">
+      <nav class="menu">
+        <a class="logo" href="#body">
+          <img class="logo__img" src="images/logo.svg" width="122" height="25" alt="логотип Finsweet">
+        </a>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="#">
+              Home
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link " href="#">
+              About us
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Services
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Blog
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Contact
+            </a>
+        </ul>
+        <div class="menu__phone">
+          <a class="menu__phone-link-icon" href="tel:18002652452">
+            <svg class="menu__phone-icon">
+              <use xlink:href="images/sprite.svg#call"></use>
+            </svg>
+          </a>
+          <div class="menu__phone-body">
+            <span class="menu__phone-title">
+              Road Assistance
+            </span>
+            <ul class="menu__phone-list">
+              <li class="menu__phone-item">
+                <a class="menu__phone-link" href="tel:18002652452">
+                  1800 265 24 52
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <button class="burger" type="button">
+          <span class="burger__line"></span>
+          <span class="sr-only">Мобильное меню</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <main class="main">
+      <section class="contact section">
+        <div class="container">
+          <h1 class="contact__title title-xl">
+            Get in touch with our experts
+          </h1>
+          <div class="contact__inner">
+            <form class="contact__form form">
+              <input class="contact__form-input form__input" type="text" name="name" placeholder="Your full Name"
+                required>
+              <input class="contact__form-input form__input" type="email" name="email" placeholder="Your Email"
+                required>
+              <input class="contact__form-input form__input" type="text" name="service"
+                placeholder="Select service type" required>
+              <input class="contact__form-input form__input" type="text" name="message" placeholder="Message" required>
+              <button class="contact__btn btn btn__orange" type="submit">
+                Send message
+              </button>
+            </form>
+            <address class="contact__info">
+              <ul class="contact__list">
+                <li class="contact__item">
+                  <span class="contact__item-title">
+                    Address
+                  </span>
+                  <a class="contact__link" href="#">
+                    NH 234 Public Square San Francisco 65368
+                  </a>
+                </li>
+                <li class="contact__item">
+                  <span class="contact__item-title">
+                    Contact Details
+                  </span>
+                  <a class="contact__link" href="tel:18002652452">
+                    1800 265 24 52
+                  </a>
+                  <a class="contact__link" href="mailto:Finsweet@gmail.com">
+                    Finsweet@gmail.com
+                  </a>
+                </li>
+                <li class="contact__item">
+                  <span class="contact__item-title">
+                    Opening Hours
+                  </span>
+                  <span class="contact__hours">
+                    Monday to Friday 9:00 AM to 10:00 AM
+                  </span>
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <div class="container">
+          <div id="map"></div>
+        </div>
+      </section>
+      <div class="contact__img" style="background-image: url('images/contact-img.jpg')"></div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top section">
+        <div class="container">
+          <div class="footer__top-inner">
+            <div class="footer__top-left">
+              <h2 class="footer__top-title title-l">
+                Get in touch with us for your service
+              </h2>
+              <ul class="footer__social social">
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg class="footer__social-icon social__icon">
+                      <use xlink:href="images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg class="footer__social-icon social__icon">
+                      <use xlink:href="images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg class="footer__social-icon social__icon">
+                      <use xlink:href="images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg class="footer__social-icon social__icon">
+                      <use xlink:href="images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <address class="footer__contacts">
+              <div class="footer__contacts-item">
+                <span class="footer__contacts-title">
+                  Help line Noumber
+                </span>
+                <a class="footer__contacts-phone" href="tel:18002652452">
+                  1800 265 24 52
+                </a>
+              </div>
+              <div class="footer__contacts-item">
+                <span class="footer__contacts-title">
+                  Address
+                </span>
+                <a class="footer__contacts-address" href="#">
+                  NH 234 Public Square San Francisco 65368
+                </a>
+              </div>
+              <div class="footer__contacts-item">
+                <span class="footer__contacts-title">
+                  We are open
+                </span>
+                <span class="footer__contacts-hours">
+                  Monday to Friday 9:00 AM to  10:00  AM
+                </span>
+              </div>
+            </address>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <nav class="footer-menu">
+            <a class="footer__logo" href="#body">
+              <img class="footer__logo-img" src="images/logo-footer.svg" alt="logo">
+            </a>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link " href="#">
+                  About us
+                </a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="#">
+                  Services
+                </a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="#">
+                  Blog
+                </a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="#">
+                  Contact
+                </a>
+            </ul>
+            <p class="footer__copyright">@ Copyright Finsweet 2021</p>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly"
+  defer></script>
+  <script>
+    // Initialize and add the map
+      function initMap() {
+        // The location of Uluru, 
+        const uluru = { lat: 40.71704133202265, lng: -73.99793153316016 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 12,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+
+      window.initMap = initMap;
+  </script>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
