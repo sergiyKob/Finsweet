@@ -1,25 +1,20 @@
 .articles2 {
-  &__list { 
+  &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 32px;
     margin-bottom: 64px;
 
-    @include xl(1200) {
-    }
     @include lg(992) {
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 20px;
     }
-    @include md(768) {
-    }
+
     @include sm(576) {
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 20px;
     }
-}
-
-  &__item {}
+  }
 }
 
 .grid-article {
@@ -47,18 +42,11 @@
     margin-bottom: 16px;
     transition: $transition;
 
-    @include xl(1200) {
-    }
     @include lg(992) {
       font-size: 28px;
-    }
-    @include md(768) {
-    }
-    @include sm(576) {
     }
   }
   &__text {
     color: #232536;
   }
 }
-

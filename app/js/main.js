@@ -61,7 +61,7 @@ $(function () {
 
   //======================== Плавний скрол ===============================//
 
-  $(".footer__logo,.logo").on("click", function (event) {
+  $(".footer__logo,.logo, .main-section__link").on("click", function (event) {
     event.preventDefault();
     var id = $(this).attr('href'),
       top = $(id).offset().top;
