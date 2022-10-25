@@ -53,6 +53,7 @@ body {
   color: $white;
   border-radius: 12px;
   padding: 16px 40px;
+  transition: $transition;
   @include xl(1200) {
   }
   @include lg(992) {
@@ -191,7 +192,7 @@ body {
     font-size: 64px;
     margin-bottom: 16px;
 
-      @include xl(1200) {
+    @include xl(1200) {
       font-size: 50px;
     }
     @include md(768) {
@@ -209,7 +210,6 @@ body {
     }
   }
 }
-
 
 .title-xl {
   @extend %manrope-800;
@@ -272,15 +272,13 @@ body {
     }
   }
 
-
-
   &__icon {
     fill: $black;
     display: block;
     margin: 0 auto;
     margin-bottom: 16px;
 
-     @include sm(576) {
+    @include sm(576) {
       margin-bottom: 4px;
     }
   }
@@ -373,27 +371,18 @@ body {
 
 .item-steps {
   position: relative;
-  padding: 12px 0 0 96px;
-  position: relative;
   &:not(:last-child) {
     margin-bottom: 16px;
-    &::before {
-      content: "";
-      position: absolute;
+
+    .item-steps__text {
       border-left: 3px dashed $primary;
-      top: 80px;
-      left: 35px;
-      height: 100%;
-      @include sm(576) {
-        left: 25px;
-      }
     }
   }
-  @include lg(992) {
-    padding: 12px 0 0 85px;
-  }
-  @include sm(576) {
-    padding: 0 0 0 60px;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
   }
 
   &__icon {
@@ -406,9 +395,8 @@ body {
     width: 72px;
     height: 72px;
     border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin-right: 24px;
+    position: relative;
     &::before {
       content: "";
       position: absolute;
@@ -418,11 +406,19 @@ body {
       background-color: rgba(255, 255, 255, 0.24);
       top: 52px;
       left: 15px;
+
+      @include sm(576) {
+        width: 28px;
+        height: 28px;
+        top: 37px;
+        left: 11px;
+      }
     }
     @include sm(576) {
       width: 50px;
       height: 50px;
       font-size: 24px;
+      margin-right: 8px;
     }
   }
 
@@ -431,7 +427,6 @@ body {
     font-size: 32px;
     line-height: 1.5;
     letter-spacing: -0.03em;
-    margin-bottom: 8px;
     @include lg(992) {
       font-size: 28px;
     }
@@ -441,15 +436,20 @@ body {
   }
 
   &__text {
-    max-width: 336px;
+    max-width: 380px;
     font-size: 18px;
     opacity: 0.6;
+    margin-left: 36px;
+    padding-left: 60px;
+
     @include lg(992) {
       line-height: 1.5;
       max-width: 100%;
     }
     @include sm(576) {
       font-size: 16px;
+      margin-left: 25px;
+      padding-left: 30px;
     }
   }
 }
