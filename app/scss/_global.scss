@@ -728,7 +728,6 @@ body {
   &__item {
     background-color: $white;
     padding: 40px;
-
     &:not(:last-child) {
       margin-bottom: 12px;
       @include sm(576) {
@@ -738,8 +737,6 @@ body {
 
     @include lg(992) {
       padding: 20px;
-    }
-    @include md(768) {
     }
     @include sm(576) {
       padding: 10px;
@@ -751,10 +748,18 @@ body {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    transition: $transition;
+
 
     &.active {
       .accordion__item-trigger::after {
         transform: rotate(0deg);
+      }
+    }
+
+    &:hover {
+      .accordion__item-title {
+        text-decoration: underline;
       }
     }
   }
@@ -764,11 +769,6 @@ body {
     font-size: 24px;
     letter-spacing: -0.03em;
     line-height: 1.5;
-    transition: $transition;
-
-    &:hover {
-      text-decoration: underline;
-    }
 
     @include md(768) {
       font-size: 20px;
